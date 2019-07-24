@@ -31,13 +31,23 @@ export default class Navbar extends Component {
 }
 
 const NavWrapper = styled.nav`
-	background: var(--mainPurple);
+	background: transparent;
 	.navbar-brand {
+		color: var(--mainDark);
 		font-size: 1.5rem;
 	}
+	.navbar-brand:hover {
+		color: var(--darkMaginta);
+		transition: all .3s ease-in-out;
+	}
 	.nav-link {
-		color: var(--mainWhite) !important;
+		color: var(--mainDark) !important;
 		text-transform: capitalize;
 		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	.nav-link:hover {
+		color: var(--darkMaginta) !important;
+		transition: all .3s ease-in-out !important;
 	}
 `;
