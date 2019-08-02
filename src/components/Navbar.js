@@ -12,7 +12,7 @@ export default class Navbar extends Component {
 				</Link>
 				<ul className="navbar-nav align-items-center">
 					<li className="nav-item ml-5">
-						<Link to="/" className="nav-link">
+						<Link to="/products" className="nav-link">
 							products
 						</Link>
 					</li>
@@ -32,6 +32,7 @@ export default class Navbar extends Component {
 
 const NavWrapper = styled.nav`
 	background: transparent;
+	border-bottom: .5px solid var(--mainDark);
 	.navbar-brand {
 		color: var(--mainDark);
 		font-size: 1.5rem;

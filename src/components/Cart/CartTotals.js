@@ -9,12 +9,12 @@ export default function CartTotals({ value, history }) {
 			<div className="container">
 				<div className="row">
 					<div className="col-10 mt-2 ml-sm-5 text-right ml-md-auto col-sm-8 text-capitalize text-right">
-						<Link to="/">
+						<Link to="/products">
 							<button className="btn btn-black text-uppercase mb-3 px-3" type="button">
 								back to store
 							</button>
 						</Link>
-						<Link to="/">
+						<Link to="/products">
 							<button
 								className="btn clear-btn mx-2 text-uppercase mb-3 px-3"
 								type="button"
