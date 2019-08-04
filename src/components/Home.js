@@ -1,26 +1,36 @@
 import React, { Component } from 'react';
-import Title from '../components/Title';
-import { ProductConsumer } from '../context';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { ButtonContainer } from './Button';
 
 export default class Home extends Component {
 	render() {
 		return (
 			<section class="showcase">
 				<div className="showcase-content">
-					<Title name="ready settt" title="cook" />
-					<div className="showcase-info">
-						<p>cookware for all sets</p>
-						<Link to="/products">
-							<ButtonContainer>
-								<div class="btn btn-xl px-5 text-uppercase">
-									let's shop
-									<i className="fas fa-chevron-right btn-icon px-3" />
-								</div>
-							</ButtonContainer>
-						</Link>
+					<div className="container">
+						<MainTitle>
+							<div className="col-10 mx-auto text-center home-title">
+								<h1 className="text-capitalize font-weight-bold title">
+									ready settt <strong>cook</strong>
+								</h1>
+							</div>
+						</MainTitle>
+						<div className="showcase-info">
+							<h2>about the collection</h2>
+							<p>
+								Ready Settt Cook is our collection of the very best basics— well-curated, high-quality,
+								exceptionally affordable pieces that allow anyone to build a beautiful kitchen set at a
+								price that’s accessible to all.
+							</p>
+							<Link to="/products">
+								<HomeBtn>
+									<button class="btn btn-xl px-5 py-3 text-uppercase">
+										let's shop
+										<i classNameName="fas fa-chevron-right btn-icon px-3" />
+									</button>
+								</HomeBtn>
+							</Link>
+						</div>
 					</div>
 				</div>
 				{/* <Title name="readysettt" title="cook" />
@@ -31,3 +41,26 @@ export default class Home extends Component {
 		);
 	}
 }
+
+const HomeBtn = styled.div`
+	.btn {
+		background: var(--mainWhite);
+	}
+	.btn:hover {
+		background: var(--mainDark);
+		color: var(--mainWhite);
+		transition: all .3s ease-in-out;
+	}
+`;
+
+const MainTitle = styled.div`
+	.home-title {
+		padding: 50px 0;
+	}
+	.title {
+		color: var(--mainWhite);
+	}
+	.title strong {
+		border-bottom: .2rem solid var(--mainDark);
+	}
+`;
