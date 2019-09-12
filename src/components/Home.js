@@ -6,6 +6,16 @@ export default class Home extends Component {
 	render() {
 		return (
 			<section class="showcase">
+				<PortfolioBtn>
+					<div className="btn-bg">
+						<div className="btn-circle">
+							<a href="https://www.byyoucode.com">
+								<i className="fas fa-chevron-circle-left" />
+							</a>
+							<div className="portfolio-title">portfolio</div>
+						</div>
+					</div>
+				</PortfolioBtn>
 				<div className="showcase-content">
 					<MainTitle>
 						<div className="col-10 mx-auto text-center home-title">
@@ -48,6 +58,45 @@ const HomeBtn = styled.div`
 		background: var(--mainDark);
 		color: var(--mainWhite);
 		transition: all .3s ease-in-out;
+	}
+`;
+
+const PortfolioBtn = styled.div`
+	.btn-bg {
+		position: absolute;
+		top: 40px;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100px;
+		width: 100px;
+	}
+	.btn-circle {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		padding: 10px;
+	}
+	a {
+		text-align: center;
+	}
+	.btn-circle .fas {
+		color: var(--mainWhite);
+		font-size: 2.3rem;
+	}
+	.btn-circle .fas:hover {
+		cursor: pointer;
+		color: var(--darkMaginta);
+		transition: all .3s ease-in-out;
+	}
+	.portfolio-title {
+		position: relative;
+		color: var(--mainWhite);
+		text-align: center;
+		font-size: .7rem;
+		text-transform: uppercase;
+		padding: 10px 0;
 	}
 `;
 
