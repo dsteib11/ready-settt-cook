@@ -64,7 +64,7 @@ const HomeBtn = styled.div`
 const PortfolioBtn = styled.div`
 	.btn-bg {
 		position: absolute;
-		top: 40px;
+		top: 0;
 		left: 0;
 		display: flex;
 		justify-content: center;
