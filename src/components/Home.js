@@ -6,17 +6,17 @@ export default class Home extends Component {
 	render() {
 		return (
 			<section class="showcase">
-				<PortfolioBtn>
-					<div className="btn-bg">
-						<div className="btn-circle">
-							<a href="https://www.byyoucode.com">
-								<i className="fas fa-chevron-circle-left" />
-							</a>
-							<div className="portfolio-title">portfolio</div>
-						</div>
-					</div>
-				</PortfolioBtn>
 				<div className="showcase-content">
+					<PortfolioBtn>
+						<div className="btn-bg">
+							<div className="btn-circle">
+								<a href="https://www.byyoucode.com">
+									<i className="fas fa-chevron-circle-left" />
+								</a>
+								<div className="portfolio-title">portfolio</div>
+							</div>
+						</div>
+					</PortfolioBtn>
 					<MainTitle>
 						<div className="col-10 mx-auto text-center home-title">
 							<h1 className="text-capitalize font-weight-bold title">
@@ -63,7 +63,7 @@ const HomeBtn = styled.div`
 
 const PortfolioBtn = styled.div`
 	.btn-bg {
-		position: absolute;
+		position: relative;
 		top: 0;
 		left: 0;
 		display: flex;
